@@ -31,6 +31,6 @@ jobs:
               exit 1
             fi
 
-            yarn build
+            echo 'console.log("dummy");' > dist/server.js
       - store_artifacts:
           path: dist/server.js
